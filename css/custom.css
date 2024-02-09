@@ -9,3 +9,13 @@
 a:hover {
   text-decoration: none !important;
 }
+
+@keyframes rotate {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#outter_big_circle , #inside_circle, #top_circles{
+  animation: rotate 5s linear infinite;
+  transform-origin: center center;
+}
